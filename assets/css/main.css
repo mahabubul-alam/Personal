@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #7f888f;
+		color: #0E9C9C;
 		font-family: "Open Sans", sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
@@ -167,7 +167,7 @@ input, select, textarea {
 			}
 
 	strong, b {
-		color: #3d4449;
+		color: #0E9C9C;
 		font-weight: 600;
 	}
 
@@ -180,7 +180,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3d4449;
+		color: #0E9C9C;
 		font-family: "Roboto Slab", serif;
 		font-weight: 700;
 		line-height: 1.5;
@@ -1986,22 +1986,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #9fa3a6 !important;
+		color: #0E9C9C !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #9fa3a6 !important;
+		color: #0E9C9C !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #9fa3a6 !important;
+		color: #0E9C9C !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #9fa3a6 !important;
+		color: #0E9C9C !important;
 		opacity: 1.0;
 	}
 
@@ -2311,7 +2311,7 @@ input, select, textarea {
 			}
 
 			ul.contact li:before {
-				color: #f56a6a;
+				color: #0E9C9C;
 				display: inline-block;
 				font-size: 1.5em;
 				height: 1.125em;
@@ -2429,7 +2429,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #3d4449;
+			color: #0E9C9C;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2489,7 +2489,7 @@ input, select, textarea {
 		border-radius: 0.375em;
 		border: 0;
 		box-shadow: inset 0 0 0 2px #f56a6a;
-		color: #f56a6a !important;
+		color: #0E9C9C !important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Roboto Slab", serif;
