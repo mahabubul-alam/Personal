@@ -122,6 +122,7 @@
       <div class="game-tabs" role="tablist">
         <button class="game-tab is-active" role="tab" aria-selected="true" data-game="game2048" type="button">2048</button>
         <button class="game-tab" role="tab" aria-selected="false" data-game="tictactoe" type="button">Tic-Tac-Toe</button>
+        <button class="game-tab" role="tab" aria-selected="false" data-game="chess" type="button">Chess Puzzles</button>
       </div>
 
       <div class="game-panel" data-panel="game2048">
@@ -164,6 +165,31 @@
           <button class="game-new-btn" id="ttt-reset" type="button">Reset</button>
         </div>
         <div class="ttt-board" id="ttt-board"></div>
+      </div>
+
+      <div class="game-panel" data-panel="chess" hidden>
+        <div class="chess-bar">
+          <div class="chess-info">
+            <span class="chess-puzzle-num" id="chess-puzzle-num">Puzzle 1 of 5</span>
+            <span class="chess-difficulty" id="chess-difficulty">Easy-Medium</span>
+          </div>
+          <div class="chess-bar-actions">
+            <button class="game-new-btn" id="chess-retry" type="button">Retry</button>
+            <button class="game-new-btn" id="chess-reset" type="button">Reset</button>
+          </div>
+        </div>
+        <p class="chess-objective" id="chess-objective">White to move — mate in 2</p>
+        <p class="chess-source" id="chess-source">Légal's Mate — Kermur de Légal vs Saint-Brie, Paris, c.1750</p>
+        <div class="chess-board" id="chess-board" role="grid" aria-label="Chess puzzle board"></div>
+        <p class="chess-status" id="chess-status" aria-live="polite"></p>
+        <div class="chess-nav">
+          <button class="chess-nav-btn" id="chess-prev" type="button" aria-label="Previous puzzle">&larr;</button>
+          <div class="chess-dots" id="chess-dots" role="group" aria-label="Puzzle progress"></div>
+          <button class="chess-nav-btn" id="chess-next" type="button" aria-label="Next puzzle">&rarr;</button>
+        </div>
+        <div class="chess-prize" id="chess-prize" hidden>
+          <p>🏆 All five solved — well played!</p>
+        </div>
       </div>
     </div>
   </div>
