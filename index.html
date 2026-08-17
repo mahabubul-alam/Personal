@@ -19,6 +19,9 @@
       <a class="nav-name" href="#top">Mahabubul Alam</a>
       <div class="nav-links">
         <a href="#publications"><span class="nav-label">Publications</span></a>
+        <button class="nav-icon-btn" id="play-fab" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="game-modal" aria-label="Play a game">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </button>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
           <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -107,7 +110,66 @@
     <a class="back-to-top" href="#top">Back to top &uarr;</a>
   </footer>
 
+  <div class="game-modal-backdrop" id="game-modal-backdrop" hidden>
+    <div class="game-modal" id="game-modal" role="dialog" aria-modal="true" aria-labelledby="game-modal-title">
+      <div class="game-modal-header">
+        <h2 class="game-modal-title" id="game-modal-title">Take a break</h2>
+        <button class="game-modal-close" id="game-modal-close" type="button" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="game-tabs" role="tablist">
+        <button class="game-tab is-active" role="tab" aria-selected="true" data-game="game2048" type="button">2048</button>
+        <button class="game-tab" role="tab" aria-selected="false" data-game="tictactoe" type="button">Tic-Tac-Toe</button>
+      </div>
+
+      <div class="game-panel" data-panel="game2048">
+        <div class="game2048-bar">
+          <div class="game2048-score">
+            <span class="game2048-score-label">Score</span>
+            <span class="game2048-score-value" id="game2048-score">0</span>
+          </div>
+          <div class="game2048-score">
+            <span class="game2048-score-label">Best</span>
+            <span class="game2048-score-value" id="game2048-best">0</span>
+          </div>
+          <button class="game-new-btn" id="game2048-new" type="button">New game</button>
+        </div>
+        <div class="game2048-board" id="game2048-board" tabindex="0" aria-label="2048 game board. Use arrow keys to play."></div>
+        <div class="game2048-dpad" role="group" aria-label="Move tiles">
+          <button class="game2048-dpad-btn game2048-dpad-up" type="button" data-dir="up" aria-label="Move up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </button>
+          <button class="game2048-dpad-btn game2048-dpad-left" type="button" data-dir="left" aria-label="Move left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="game2048-dpad-btn game2048-dpad-right" type="button" data-dir="right" aria-label="Move right">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="game2048-dpad-btn game2048-dpad-down" type="button" data-dir="down" aria-label="Move down">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </button>
+        </div>
+        <p class="game2048-hint">Use arrow keys, the buttons above, or swipe to combine tiles and reach 2048.</p>
+      </div>
+
+      <div class="game-panel" data-panel="tictactoe" hidden>
+        <div class="ttt-first" role="group" aria-label="Who goes first">
+          <button class="ttt-first-btn is-active" data-first="human" type="button">You first</button>
+          <button class="ttt-first-btn" data-first="computer" type="button">Computer first</button>
+        </div>
+        <div class="ttt-bar">
+          <p class="ttt-status" id="ttt-status">Your turn (X)</p>
+          <button class="game-new-btn" id="ttt-reset" type="button">Reset</button>
+        </div>
+        <div class="ttt-board" id="ttt-board"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="main.js"></script>
+  <script src="games.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179138529-1"></script>
   <script>

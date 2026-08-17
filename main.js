@@ -184,7 +184,7 @@
 
   function renderPublications() {
     var frag = document.createDocumentFragment();
-    publications.forEach(function (pub, i) {
+    publications.forEach(function (pub) {
       var li = document.createElement("li");
       li.className = "pub-item";
       li.dataset.search = (pub.title + " " + pub.authors.join(" ") + " " + pub.venue + " " + pub.abbr + " " + pub.year).toLowerCase();
