@@ -1,306 +1,114 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-    color: #1772d0;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
-    }
-    strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-    }
-    subheading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 18px;
-    }
-    papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700
-    }
-    name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
-    }
-    paperfigure{
-    text-align:center;
-    width:100%;
-    display:block;
-    margin:auto;
-    }
-  </style>
-
   <title>Mahabubul Alam</title>
+  <meta name="description" content="Mahabubul Alam — Ph.D., Electrical Engineering, Penn State. Quantum computing, EDA, VLSI, and applied statistical learning.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <table id="about" width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tbody>
-      <tr>
-        <td>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td width="67%" valign="middle">
-                  <p style ="font-size:20px">Mahabubul Alam</p>
-                  <p align="justify">
-                    Hi, I am Mahabubul Alam. I received my Ph.D. in electrical engineering from Penn State. I am broadly interested in quantum computing, EDA, VLSI, and applied statistical learning.
-                  </p>
-                  <p align="center">
-                    <!-- <a href="#about">About</a> &nbsp;/&nbsp; -->
-                    <a href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/mahabubul-alam">GitHub</a> &nbsp;/&nbsp;
-                    <a href="mailto:mxa890@psu.edu">Email</a> &nbsp;/&nbsp;
-                    <a href="Mahabubul_Alam.pdf">CV</a> &nbsp;
-                  </p>
-                </td>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-name" href="#top">Mahabubul Alam</a>
+      <div class="nav-links">
+        <a href="#publications"><span class="nav-label">Publications</span></a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-                <td width="33%"><img src="mahabubul.jpg" width="200px" height="auto"></td>
-              </tr>
-            </tbody>
-          </table>
+  <main id="top">
 
-          <table border="0" width="100%" cellspacing="0" cellpadding="10" align="center">
-            <tbody>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Ph.D., Electrical Engineering — Penn State</p>
+        <h1>Mahabubul Alam</h1>
+        <p class="bio">
+          I'm broadly interested in quantum computing, electronic design automation (EDA),
+          VLSI, and applied statistical learning.
+        </p>
+        <div class="links">
+          <a class="pill" href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2zM5 12.18v3.03c0 2.1 3.1 4.79 7 4.79s7-2.69 7-4.79v-3.03l-7 3.82-7-3.82z"/></svg>
+            Google Scholar
+          </a>
+          <a class="pill" href="https://github.com/mahabubul-alam" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.35-3.87-1.35-.53-1.33-1.29-1.69-1.29-1.69-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="pill" href="mailto:mxa890@psu.edu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+            Email
+          </a>
+        </div>
 
-              <tr>
-                <td id="publications" valign="middle" width="100%"><p style ="font-size:20px">Selected Publications</p></td>
-              </tr>
-              
-              <tr>
-                <td valign="top">
-                  <p align="left">
-                    <a href="https://arxiv.org/pdf/2207.01801.pdf">Knowledge Distillation in Quantum Neural Network using Approximate Synthesis</a>
-                    <br> Mahabubul Alam, Satwik Kundu, Swaroop Ghosh <br>
-                    <em>IEEE/ACM Asia and South Pacific Design Automation Conference</em>, 2023.
-                  </p>
-                </td>
-              </tr>
+        <!-- scholar-stats:start (auto-updated by .github/workflows/update-scholar-stats.yml) -->
+        <div class="scholar-stats">
+          <a class="stat" href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="stat-num">1,732</span>
+            <span class="stat-label">Citations</span>
+          </a>
+          <a class="stat" href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="stat-num">25</span>
+            <span class="stat-label">h-index</span>
+          </a>
+          <a class="stat" href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="stat-num">31</span>
+            <span class="stat-label">i10-index</span>
+          </a>
+        </div>
+        <p class="stats-note">
+          Updated Aug 2026 &middot;
+          <a href="https://scholar.google.com/citations?user=wdwoHuMAAAAJ&hl=en" target="_blank" rel="noopener">live figures on Google Scholar</a>
+        </p>
+        <!-- scholar-stats:end -->
+      </div>
+      <div class="hero-photo">
+        <img src="mahabubul.jpg" alt="Portrait of Mahabubul Alam" width="152" height="152">
+      </div>
+    </section>
 
-              <tr>
-                <td valign="top">
-                  <p align="left">
-                    <a href="https://www.frontiersin.org/articles/10.3389/fphy.2021.755139/abstract">QNet: A Scalable and Noise-resilient Quantum Neural Network Architecture for <br>Noisy Intermediate-Scale Quantum Computers</a>
-                    <br> Mahabubul Alam, Swaroop Ghosh <br>
-                    <em>Frontiers in Physics, Quantum Engineering and Technology</em>, 2022.
-                  </p>
-                </td>
-              </tr>
+    <section id="publications">
+      <div class="section-head">
+        <h2>Selected Publications</h2>
+        <span class="pub-count" id="pub-count"></span>
+      </div>
 
-              <tr>
-                <td valign="top">
-                  <p align="left">
-                    <a href="https://arxiv.org/pdf/2109.02862.pdf">Quantum-Classical Hybrid Machine Learning for Image Classification: Invited Paper</a>
-                    <br> Mahabubul Alam, Satwik Kundu, Rasit Onur Topaloglu, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Conference on Computer Aided Design</em>, 2021.
-                  </p>
-                </td>
-              </tr>
+      <div class="pub-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="pub-search-input" placeholder="Search by title, author, venue, or year">
+      </div>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://arxiv.org/pdf/2104.00746.pdf">Drug Discovery Approaches using Quantum Machine Learning: Invited Paper</a>
-                    <br> Junde Li, Mahabubul Alam, Congzhou M Sha, Jian Wang, Nikolay V. Dokholyan, Swaroop Ghosh <br>
-                    <em>IEEE/ACM Design Automation Conference</em>, 2021.
-                  </p>
-                </td>
-              </tr>
+      <ul class="pub-list" id="pub-list"></ul>
+      <p class="pub-empty" id="pub-empty">No publications match your search.</p>
+    </section>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://www.microarch.org/micro53/papers/738300a215.pdf?fbclid=IwAR3XkZ-7yzz9oo-WreFgn3tMHbf0uPKspkgx3ZEpf9eJsdjhebSktaCP-5Q">Circuit Compilation Methodologies for Quantum Approximate Optimization Algorithm</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Symposium on Microarchitecture</em>, 2020.
-                  </p>
-                </td>
-              </tr>
+  </main>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://whova.com/xems/whova_backend/get_event_s3_file_api/?eventkey=e1e7d48028ad92bc62772c4099fcd8739e34ccd05947050aa9ed15f33dd5df95&event_id=iccad_202011&file_url=https://whova.com/xems/whova_backend/get_event_s3_file_api/?event_id=iccad_202011&eventkey=e1e7d48028ad92bc62772c4099fcd8739e34ccd05947050aa9ed15f33dd5df95&file_url=https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/files/lgbvy_11D_5.pdf">Noise Resilient Compilation Policies for Quantum Approximate Optimization Algorithm: Invited Paper</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Junde Li, Anupam Chattopadhyay, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Conference on Computer Aided Design</em>, 2020.
-                  </p>
-                </td>
-              </tr>
+  <footer>
+    <span>&copy; <span id="year"></span> Mahabubul Alam</span>
+    <a class="back-to-top" href="#top">Back to top &uarr;</a>
+  </footer>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/9193969">Experimental Characterization, Modeling, and Analysis of Crosstalk in a Quantum Computer</a>
-                    <br> Abdullah Ash- Saki, Mahabubul Alam, Swaroop Ghosh <br>
-                    <em>IEEE Transactions on Quantum Engineering (TQE)</em>, 2020.
-                  </p>
-                </td>
-              </tr>
+  <script src="main.js"></script>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://dl.acm.org/doi/10.1145/3370748.3406570">Analysis of crosstalk in NISQ devices and security implications in multi-programming regime</a>
-                    <br> Abdullah Ash- Saki, Mahabubul Alam, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Symposium on Low Power Electronics and Design</em>, 2020.
-                  </p>
-                </td>
-              </tr>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179138529-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-179138529-1');
+  </script>
 
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://dl.acm.org/doi/abs/10.1145/3370748.3406586">Resiliency analysis and improvement of variational quantum factoring in superconducting qubit</a>
-                    <br> Ling Qiu, Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Symposium on Low Power Electronics and Design</em>, 2020.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/abstract/document/9218558">An Efficient Circuit Compilation Flow for Quantum Approximate Optimization Algorithm</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>IEEE/ACM Design Automation Conference</em>, 2020.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/9075903">Design-Space Exploration of Quantum Approximate Optimization Algorithm under Noise</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>IEEE Custom Integrated Circuits Conference</em>, 2020.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/9116348">Accelerating Quantum Approximate Optimization Algorithm using Machine Learning</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>Design Automation and Test in Europe</em>, 2020.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/9137054">Improving Reliability of Quantum True Random Number Generator using Machine Learning</a>
-                    <br> Abdullah Ash- Saki, Mahabubul Alam, Swaroop Ghosh <br>
-                    <em>International Symposium on Quality Electronic Design</em>, 2020.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/8942132">MUQUT: Multi-Constraint Quantum Circuit Mapping on NISQ Computers: Invited Paper</a>
-                    <br> Debjyoti Bhattacharjee, Abdullah Ash- Saki, Mahabubul Alam,  Anupam Chattopadhyay, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Conference on Computer Aided Design</em>, 2019.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/8824907">Addressing Temporal Variations in Qubit Quality Metrics for Parameterized Quantum Circuits</a>
-                    <br> Mahabubul Alam, Abdullah Ash- Saki, Swaroop Ghosh <br>
-                    <em>IEEE/ACM International Symposium on Low Power Electronics and Design</em>, 2019.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/8806892">QURE: Qubit Re-allocation in Noisy Intermediate-Scale Quantum Computers</a>
-                    <br> Abdullah Ash- Saki, Mahabubul Alam, Swaroop Ghosh <br>
-                    <em>IEEE/ACM Design Automation Conference</em>, 2019.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top">
-                  <p align="left"><a href="https://ieeexplore.ieee.org/document/8383917">Robust, low-cost, and accurate detection of recycled ICs using digital signatures</a>
-                    <br> Mahabubul Alam, Sreeja Chowdhury, Mark Tehranipoor, Ujjwal Guin <br>
-                    <em>IEEE International Symposium on Hardware Oriented Security and Trust</em>, 2018.
-                  </p>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <br>
-                  <p align="right">
-                    <font size="2">
-                      <a href="http://www.cs.berkeley.edu/~barron/"><u>Website template copied from here</u></a>
-                    </font>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-        </td>
-      </tr>
-    </tbody>
-  </table>
 </body>
-
-<!-- If you use this WEBPAGE as a template, please REMOVE the following script block) -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179138529-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-179138529-1');
-</script>
-
 </html>
