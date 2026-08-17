@@ -57,7 +57,7 @@
     },
     {
       title: "Circuit Compilation Methodologies for Quantum Approximate Optimization Algorithm",
-      url: "https://www.microarch.org/micro53/papers/738300a215.pdf?fbclid=IwAR3XkZ-7yzz9oo-WreFgn3tMHbf0uPKspkgx3ZEpf9eJsdjhebSktaCP-5Q",
+      url: "https://par.nsf.gov/servlets/purl/10292780",
       authors: ["Mahabubul Alam", "Abdullah Ash-Saki", "Swaroop Ghosh"],
       venue: "IEEE/ACM International Symposium on Microarchitecture",
       abbr: "MICRO",
